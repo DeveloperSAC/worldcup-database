@@ -1,8 +1,12 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 PSQL="psql --username=freecodecamp --dbname=worldcup --no-align --tuples-only -c"
 
 # No modificar código arriba de esta línea. Usa la variable $PSQL arriba para consultar tu base de datos
+=======
+PSQL="psql --username=freecodecamp --dbname=worldcup -h localhost --no-align --tuples-only -c"
+>>>>>>> 54cd244c8a391328b74459bf407d899990c53b46
 
 echo -e "\nTotal number of goals in all games from winning teams:"
 echo "$($PSQL "SELECT SUM(winner_goals) FROM games")"
@@ -38,4 +42,8 @@ echo -e "\nYear and team name of all the champions:"
 echo "$($PSQL "SELECT year, name FROM teams INNER JOIN games ON teams.team_id = games.winner_id WHERE round = 'Final' ORDER BY year")"
 
 echo -e "\nList of teams that start with 'Co':"
+<<<<<<< HEAD
 echo "$($PSQL "SELECT name FROM teams WHERE name LIKE 'Co%'")"
+=======
+echo "$($PSQL "SELECT name FROM teams WHERE name LIKE 'Co%'")"
+>>>>>>> 54cd244c8a391328b74459bf407d899990c53b46

@@ -40,3 +40,60 @@ chmod +x insert_data.sh
 chmod +x queries.sh
 ./insert_data.sh
 ./queries.sh
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+ls --color=auto -la worldcup.sql insert_data.sh queries.sh
+__vsc_prompt_cmd_original
+cd /project
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git init
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git remote add origin https://github.com/DeveloperSAC/worldcup-database.git
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git remote set-url origin https://github.com/DeveloperSAC/worldcup-database.git
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git config user.name "Tu Nombre"
+git config user.email "tu-email@ejemplo.com"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git pull origin main --allow-unrelated-histories
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add worldcup.sql insert_data.sh queries.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add README.md
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git commit -m "Complete World Cup Database project - FCC certification"
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git push origin main
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git branch -M main
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git pull origin main --allow-unrelated-histories --force
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git stash
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git pull origin main --allow-unrelated-histories
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git stash pop
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add worldcup.sql insert_data.sh queries.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add .
